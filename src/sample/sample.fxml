@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <ComboBox fx:id="cmbBox" layoutX="15.0" layoutY="32.0" prefHeight="26.0" prefWidth="134.0" />
+      <Label layoutX="51.0" layoutY="14.0" text="Add animal" />
+      <TextField fx:id="addName" layoutX="15.0" layoutY="89.0" prefHeight="26.0" prefWidth="133.0" />
+      <TextField fx:id="addAge" layoutX="15.0" layoutY="131.0" prefHeight="26.0" prefWidth="134.0" />
+      <TextField fx:id="addOwnerName" layoutX="15.0" layoutY="175.0" prefHeight="26.0" prefWidth="134.0" />
+      <TextField fx:id="addWeight" layoutX="15.0" layoutY="220.0" prefHeight="26.0" prefWidth="134.0" />
+      <TextField fx:id="addHeight" layoutX="15.0" layoutY="264.0" prefHeight="26.0" prefWidth="134.0" />
+      <Label layoutX="65.0" layoutY="72.0" text="Name" />
+      <Label layoutX="70.0" layoutY="115.0" text="Age" />
+      <Label layoutX="42.0" layoutY="157.0" text="OwnerName" />
+      <Label layoutX="62.0" layoutY="201.0" text="Weight" />
+      <Label layoutX="64.0" layoutY="246.0" text="Height" />
+      <Button fx:id="editBtn" layoutX="558.0" layoutY="31.0" mnemonicParsing="false" onAction="#editBtnOnClickMethod" prefHeight="26.0" prefWidth="50.0" text="Edit" />
+      <Button fx:id="delBtn" layoutX="641.0" layoutY="31.0" mnemonicParsing="false" onAction="#delBtnOnClickMethod" text="Delete" />
+      <TextField fx:id="edtName" layoutX="556.0" layoutY="89.0" prefHeight="26.0" prefWidth="133.0" />
+      <TextField fx:id="edtAge" layoutX="556.0" layoutY="131.0" prefHeight="26.0" prefWidth="134.0" />
+      <TextField fx:id="edtOwnerName" layoutX="556.0" layoutY="175.0" prefHeight="26.0" prefWidth="134.0" />
+      <TextField fx:id="edtWeight" layoutX="556.0" layoutY="220.0" prefHeight="26.0" prefWidth="134.0" />
+      <TextField fx:id="edtHeight" layoutX="556.0" layoutY="263.0" prefHeight="26.0" prefWidth="134.0" />
+      <Label layoutX="606.0" layoutY="72.0" text="Name" />
+      <Label layoutX="611.0" layoutY="115.0" text="Age" />
+      <Label layoutX="583.0" layoutY="157.0" text="OwnerName" />
+      <Label layoutX="603.0" layoutY="201.0" text="Weight" />
+      <Label layoutX="605.0" layoutY="246.0" text="Height" />
+      <TextArea fx:id="listArea" layoutX="171.0" layoutY="36.0" prefHeight="394.0" prefWidth="363.0" />
+      <Button fx:id="addBth" layoutX="63.0" layoutY="306.0" mnemonicParsing="false" onAction="#addBtnOnClickMethod" text="Add" />
+      <TextField fx:id="pathToSer" layoutX="556.0" layoutY="325.0" prefHeight="26.0" prefWidth="134.0" />
+      <Label layoutX="584.0" layoutY="310.0" text="File to serialize" />
+      <Button fx:id="sBtn" layoutX="586.0" layoutY="358.0" mnemonicParsing="false" onAction="#sBtnOnClickMethod" prefHeight="26.0" prefWidth="73.0" text="Serialize" />
+      <TextField fx:id="pathToDes" layoutX="556.0" layoutY="417.0" prefHeight="26.0" prefWidth="134.0" />
+      <Label layoutX="576.0" layoutY="399.0" text="File to deserialize" />
+      <Button fx:id="desBtn" layoutX="587.0" layoutY="451.0" mnemonicParsing="false" onAction="#desBtnOnClickMethod" text="Deserialize" />
+   </children>
+</AnchorPane>
